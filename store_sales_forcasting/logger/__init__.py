@@ -1,7 +1,7 @@
 import logging
 import os
 import sys
-from datatime import datetime
+from datetime import datetime
 
 # creating logs directory to store log in files
 LOG_DIR = "logs"
