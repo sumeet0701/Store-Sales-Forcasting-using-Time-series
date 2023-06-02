@@ -1,0 +1,29 @@
+training_pipeline_config:
+  pipeline_name: Sales 
+  artifact_dir: artifact
+
+data_ingestion_config:
+  dataset_download_url: https://github.com/sumeet0701/data-dump/blob/main/final_data.zip?raw=true
+  raw_data_dir: raw_data
+  tgz_download_dir: tgz_data
+  ingested_dir: ingested_data
+  ingested_train_dir: train
+  ingested_test_dir: test 
+
+data_validation_config:
+  schema_dir: config
+  schema_file_name: schema.yaml
+  report_file_name: report.json
+  report_page_file_name: report.html
+  Train_data: Train_data
+  Test_data: Test_data
+  
+
+data_transformation_config:
+  transformed_dir: transformed_data
+  transformed_train_dir: train
+  transformed_test_dir: test
+  preprocessing_dir: preprocessed
+  feature_engineering_object_file_name: feat_eng.pkl
+  preprocessed_object_file_name: preprocessed.pkl
+
